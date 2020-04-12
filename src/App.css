@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
+input {
+  font-size: 25px;
+  margin-left: 160px;
+  border: 2px solid skyblue;
+  padding: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  border: 3px solid skyblue;
+  background-color: white;
+  color: skyblue;
+  padding: 10px;
+  font-size: 20px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+button:hover {
   color: white;
+  border: 3px solid white;
+  background: skyblue;
+  transition: 0.8s;
+}
+#btn {
+  margin-left: 10px;
+  border-radius: 10px;
+}
+#start {
+  border-radius: 10px;
+  margin-left: 50px;
+}
+#form {
+  width: 750px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+#template {
+  margin: 0 auto;
+  margin-top: 300px;
+  width: 1000px;
+  overflow: hidden;
+  height: auto;
+}
+ul {
+  width: auto; /* change it to whatever you like */
+  position: relative;
+
+  /* these should be probably already set up by `reset.css` */
+  list-style-type: none;
+
+  margin: 0;
+  padding: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#result {
+  color: white;
+  margin: 0 auto;
+
+  font-size: 250px;
+  height: 150px;
+  width: auto;
+
+  text-align: center;
+  margin-top: 17%;
+}
+ul:before,
+ul:after {
+  text-align: center;
+  display: block;
+  border: 2px solid rgb(47, 100, 143);
+  border-bottom: 0;
+  border-radius: 10px;
+  width: 48%;
+}
+
+ul:before {
+  border-right: 0;
+}
+
+ul:after {
+  position: absolute;
+  top: 0;
+  left: 48%;
+  margin-left: 1px;
+}
+
+li {
+  text-align: center;
+  border: 3px solid rgb(79, 156, 189);
+  background-color: white;
+  color: rgb(79, 156, 189);
+  width: 18%;
+  float: left;
+
+  font-size: 20px;
+  margin-bottom: -1px;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 9px;
+  margin-right: 10px;
+  padding-bottom: 5px;
+}
+li:hover {
+  background: rgb(79, 156, 189);
+  color: white;
+  border: 3px solid white;
+  transition: 0.8s;
+}
+
+li:nth-child(even) {
+  margin-left: -1px;
 }
